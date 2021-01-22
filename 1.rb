@@ -1,75 +1,75 @@
-=begin
-a = 10
-b=3
-puts (a%b)
+# sentence = 'У меня в комнате стоит ёлка'
+# new_arr = []
+# sentence.split(' ').each_with_index do |word, index|
+#     new_arr << sentence[0]
+#   if word.length > sentence[0].length
+#     new_arr.clear
+#     new_arr << word
+#     else
+#   end
+# p new_arr
+# end
 
-def pythagorean_theorem(a,b)
-  p (a**2+b**2)
+#p new_arr
+
+
+#p words.max_by(&:length)
+
+# p sentence[0].length
+#
+# sentence = "У меня в комнате стоит ёлка"
+#
+# sentence.split(' ').each_with_index do |word, index|
+#
+#   if sentence[1].length > sentence[0].length
+#     sentence.delete_at(0)
+#   elsif sentence[2].length > sentence[1].length
+#     sentence.delete_at(1)
+#   elsif sentence[3].length > sentence[2].length
+#     sentence.delete_at(2)
+#   elsif sentence[4].length > sentence[3].length
+#     sentence.delete_at(3)
+#   elsif sentence[5].length > sentence[4].length
+#     sentence.delete_at(4)
+#   end
+# end
+# p sentence
+
+# sentence = 'У меня в комнате стоит ёлка'
+# new_arr = []
+# sentence.split('').each_with_index do |word, index|
+#   p sentence
+#   i = index
+#   new_arr << sentence[i]
+#   if word.length > sentence[i].length
+#
+#     new_arr.clear
+#     new_arr << word
+#     else
+#   end
+#
+# end
+#
+# sentence = "У меня в комнате стоит ёлка".split(' ')
+#
+# sentence.each_with_index do |word, index|
+# i = index
+# p index
+# p sentence
+#   if sentence[1].length > sentence[0].length
+#     sentence.delete_at(0)
+#
+#     else sentence.delete_at(1)
+#   end
+#   p sentence
+# end
+
+sentence = "У меня в комнате стоит ёлка".split(' ')
+
+while sentence.size > 1 do
+  if sentence[1].length > sentence[0].length
+    sentence.delete_at(0)
+  else sentence.delete_at(1)
+  end
 end
-
-
-p gipot = pythagorean_theorem(2,5)
-
-name = "Hello"
-p name.upcase!
-
-****
-
-class Animals
-  def initialize(legs, ears)
-    @legs = legs
-    @ears = ears
-  end
-
-  def legs count
-    p "I have #{count} legs"
-  end
-
-  def ears count
-    p "I have #{count} ears"
-  end
-end
-
-class Cats < Animals
-  def initialize(legs, ears)
-    @legs = legs
-    @ears = ears
-  end
-
-  def eat_per_month coast
-    p "I eat #{coast * 30} per month"
-  end
-
-  def say
-    p 'Myay'
-  end
-end
-
-motya = Cats.new(4, 2)
-p motya.say
-p motya.eat_per_month 20
-p motya.legs 4
-p motya.ears 2
-
-class Dogs < Animals
-  def initialize(legs, ears)
-    @legs = legs
-    @ears = ears
-  end
-
-  def eat_bone_month coast
-    p "I eat #{coast * 30} bone month"
-  end
-
-  def say
-    p 'Gav'
-  end
-end
-
-fill = Dogs.new(4, 2)
-p fill.say
-p fill.eat_bone_month 2
-p fill.legs 4
-p fill.ears 2
-
-=end
+p sentence
